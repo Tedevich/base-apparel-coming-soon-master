@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Josefin+Sans:wght@300;400;600&display=swap');
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+header{
+    position: absolute;
+	height: auto;
+	width: 100%;
+	padding: 30px;
+}
+body{
+    
+    background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+.logo img{
+   position: relative;
+    width: 100px;
+    height: 20px;
+    margin-left: 32px;
+    margin-top: 31px;
+    object-position: left;
+}
+.container{
+
+    /* background-image: url("./images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: cover; */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center; 
+    /* margin-top: 20px; */
+    margin-bottom: 50px;
+    
+	
+}  
+.main-image{
+    background-image: url("./images/hero-mobile.jpg");
+    background-position: cover;
+    
+    background-repeat: no-repeat;
+    width: 100%;
+	height: 300px;
+   
+    margin-top: 58px;
+
+} 
+.text{
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family:"Josefin sans", sans-serif;
+}
+.text h1{
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10px;
+    color:#CE9898 ;
+    text-transform: uppercase;
+    
+    
+}
+.text h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 10px;
+    color: #423A3A;
+    text-transform: uppercase;
+}
+.text p{
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #CE9898;
+}
+.container form{
+    /* border: solid 1px;
+    border-color:#CE9898 ;
+    border-radius: 12px; */
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+   
+}
+.container form input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 50px;
+    left: 0;
+    top: 32px;
+    border: 1px solid #CE9898;
+    padding-left: 30px;
+    font-size: 1 rem;
+    background:linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+}
+.container form button{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    height: 100%;
+    width: 64px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
+    box-shadow:0px 15px 20px rgba(198, 110, 110, 0.247569) ;
+    transition: .3s ease box-shadow;
+}
+.container form button:hover{
+    background:linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+    box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+
+}
+.container form input::placeholder{
+    color: #CE9898;
+    opacity: .8;
+}
+.container form .error{
+    display: inline-block;
+    position: absolute;
+    left: 68%;
+    top: 90%;
+    display: none;
+
+}
+.container form .error-text {
+    position: absolute;
+    top: 140%;
+    left:9%;
+    color: #F96464;
+    display: none;
+    
+
+}
+.container form .error .error{
+    display: block;
+}
+.container form .error .error-text{
+    display: block;
+}
+
+@media only screen and (min-width: 768px) {
+	header {
+        width: 300px;
+		padding-left: 10%;
+        
+	}
+    .logo img{
+        margin-left: 165px;
+    }
+	.container {
+		padding-top: 0;
+		margin-bottom: 0;
+        flex-direction: row-reverse;
+		padding-bottom: 0;
+       
+	}
+	.main-image {
+		width: 80%;
+		height: 100vh;
+		background-image: url("./images/hero-desktop.jpg");
+        background-position: cover;
+        margin-top: 0;
+        
+	}
+	 .text {
+		
+        padding-top: 28vh;
+		width: 100%;
+		height: 100vh;
+		padding-left: 165px;
+        padding-right: 178px;
+        padding-bottom: 152px;
+        
+		background-image: url("./images/bg-pattern-desktop.svg");
+		background-size: cover;
+		background-position: center;
+	}
+	.text h1 {
+		text-align: left;
+		font-size: 64px;
+		line-height: 64px;
+	}
+    .text h2{
+        text-align: left;
+        font-size:  64px;;
+		line-height: 71px;
+    }
+	.text p {
+		margin-left: 0;
+		text-align: left;
+		font-size: 1.1rem;
+	}
+	.container form {
+		margin-left: 0;
+        width: 445px;
+        height: 56px;
+	}
+	.container form button {
+		width: 80px;
+	} 
+}
